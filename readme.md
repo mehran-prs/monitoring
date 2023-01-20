@@ -50,10 +50,10 @@ docker run -d \
   --path.rootfs=/host \
   --web.config.file=/etc/node-exporter.yml
   
-# 5. Add the `{node's public ip}:9100`(e.g., 123.123.123.123:9100) to the `static_configs -> targets` array of "vpn" job 
+# 5. Add the `{node's public ip}:9100`(e.g., 123.123.123.123:9100) to the `static_configs -> targets` array of "nodes" job 
 # in the `prometheus.prod.yaml` config file on the monitoring node. For example it should be something like this
 
-  - job_name: 'vpn'
+  - job_name: 'nodes'
     basic_auth:
       username: 'prometheus'
       password: 'my_secure_password'

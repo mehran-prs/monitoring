@@ -8,7 +8,7 @@ scrape_configs:
   - job_name: 'prometheus'
     static_configs:
       - targets: [ 'localhost:9090' ]
-  - job_name: 'vpn'
+  - job_name: 'nodes'
     basic_auth:
       username: 'prometheus'
       password: 'put your node_exporter password' # <---- your node exporter password.
