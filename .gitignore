@@ -1,2 +1,7 @@
 .idea
+
 /lab
+.secret
+
+prometheus.prod.yml
+node_exporter/web-config.prod.yml

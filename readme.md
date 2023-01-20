@@ -1,5 +1,14 @@
+### Dependencies
+
+- docker
+- docker compose
+
+### Getting started
+
 ```bash
-cp -p -r ./provisioning  /etc/grafana/provisioning
-cp prometheus.yml prometheus.prod.yml
+# Install docker and docker-compose
+apt-get update && apt install docker.io docker-compose
+
+mv prometheus.yml prometheus.prod.yml
 docker-compose up -d
 ```
