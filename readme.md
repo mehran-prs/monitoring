@@ -45,7 +45,7 @@ docker run -d \
   --net="host" \
   --pid="host" \
   -v "/:/host:ro,rslave" \
-  -v "$(pwd)/web-config.prod.yml:/etc/node-exporter.yml" \
+  -v "$(pwd)/node-exporter.prod.yml:/etc/node-exporter.yml" \
   prom/node-exporter:v1.5.0 \
   --path.rootfs=/host \
   --web.config.file=/etc/node-exporter.yml
